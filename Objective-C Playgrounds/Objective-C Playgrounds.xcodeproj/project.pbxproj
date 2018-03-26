@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94532DE82069488E00CBCC05 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 94532DE72069488E00CBCC05 /* BankAccount.m */; };
+		94532DEB20694B1A00CBCC05 /* AtmBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 94532DEA20694B1A00CBCC05 /* AtmBankAccount.m */; };
 		FD80E2771A5C2D8F00287CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD80E2761A5C2D8F00287CA9 /* main.m */; };
 		FD80E27A1A5C2D8F00287CA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD80E2791A5C2D8F00287CA9 /* AppDelegate.m */; };
 		FD80E27D1A5C2D8F00287CA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD80E27C1A5C2D8F00287CA9 /* ViewController.m */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94532DE62069488E00CBCC05 /* BankAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
+		94532DE72069488E00CBCC05 /* BankAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		94532DE920694B1A00CBCC05 /* AtmBankAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtmBankAccount.h; sourceTree = "<group>"; };
+		94532DEA20694B1A00CBCC05 /* AtmBankAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtmBankAccount.m; sourceTree = "<group>"; };
 		FD80E2711A5C2D8F00287CA9 /* Objective-C Playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C Playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD80E2751A5C2D8F00287CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD80E2761A5C2D8F00287CA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -156,6 +162,10 @@
 		FD80E29B1A5C2DB300287CA9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				94532DE62069488E00CBCC05 /* BankAccount.h */,
+				94532DE72069488E00CBCC05 /* BankAccount.m */,
+				94532DE920694B1A00CBCC05 /* AtmBankAccount.h */,
+				94532DEA20694B1A00CBCC05 /* AtmBankAccount.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -209,6 +219,7 @@
 				TargetAttributes = {
 					FD80E2701A5C2D8F00287CA9 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0920;
 					};
 					FD80E2891A5C2D8F00287CA9 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -260,10 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94532DEB20694B1A00CBCC05 /* AtmBankAccount.m in Sources */,
 				FD80E27D1A5C2D8F00287CA9 /* ViewController.m in Sources */,
 				FD80E2AD1A5C42CC00287CA9 /* Classes.m in Sources */,
 				FD80E2B31A5C470500287CA9 /* Enums.m in Sources */,
 				FD80E2A11A5C2DD700287CA9 /* Collections.m in Sources */,
+				94532DE82069488E00CBCC05 /* BankAccount.m in Sources */,
 				FD80E27A1A5C2D8F00287CA9 /* AppDelegate.m in Sources */,
 				FD80E2A41A5C2DE800287CA9 /* Functions.m in Sources */,
 				FD80E2771A5C2D8F00287CA9 /* main.m in Sources */,
@@ -408,10 +421,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Objective-C Playgrounds/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rosehulman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-C Playgrounds/Objective-C Playgrounds-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -419,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Objective-C Playgrounds/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rosehulman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-C Playgrounds/Objective-C Playgrounds-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
