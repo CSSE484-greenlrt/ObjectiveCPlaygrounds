@@ -10,10 +10,6 @@
 
 @implementation ObjCTicTacToeGame
 
-//init() {
-//    gameState = .xTurn
-//    gameBoard = [MarkType](repeating: .none, count: 9)
-//}
 - (id) init {
     self = [super init];
     if (self) {
@@ -25,13 +21,6 @@
     return self;
 }
 
-//enum GameState: String {
-//case xTurn = "X's Turn"
-//case oTurn = "O's Turn"
-//case xWon = "X Wins!"
-//case oWon = "O Wins!"
-//case tie = "Tie Game"
-//}
 - (NSString*) getGameStateString {
     switch (self.gameState) {
         case GameStateXTurn:
@@ -57,6 +46,10 @@
             return @"O";
     }
 }
+
+- (MarkType) getGameBoardMarkAtIndex:(NSInteger) index {
+    return gameBoard[index];
+}
 //
 //func getGameString(_ indices: [Int] = [0, 1, 2, 3, 4, 5, 6, 7, 8]) -> String {
 //    var gameString = ""
@@ -81,8 +74,9 @@
 //    }
 //}
 //
-- (void) pressedSquare:(NSInteger) index;
-
+- (void) pressedSquare:(NSInteger) index {
+    
+}
 
 //func checkForGameOver() {
 //    if !gameBoard.contains(.none) {
@@ -110,4 +104,5 @@
 //var description: String {
 //    return "\(gameState.rawValue)  Board: \(getGameString())"
 //}
+
 @end

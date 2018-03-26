@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger, MarkType) {
 - (NSString*) getGameStateString;
 - (NSString*) getMarkTypeString:(MarkType) mark;
 - (void) pressedSquare:(NSInteger) index;
+- (MarkType) getGameBoardMarkAtIndex:(NSInteger) index;
 
 @property (nonatomic) GameState gameState;
 
